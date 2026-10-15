@@ -1,0 +1,17 @@
+# ============================================================
+# requirements.txt — LOCAL DEVELOPMENT ONLY
+# ============================================================
+# These packages are for running the DESKTOP / STREAMLIT version
+# locally on your own machine.
+#
+# Vercel deployment does NOT use these — the live web app runs
+# entirely in the browser using MediaPipe CDN (zero server packages).
+# ============================================================
+
+# Local desktop & Streamlit demo only:
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+scipy>=1.11.0
+pillow>=10.0.0
+streamlit>=1.30.0

@@ -1,0 +1,37 @@
+# .vercelignore — Files/folders excluded from Vercel deployment bundle
+# This keeps the deployment tiny (only index.html is needed)
+
+# Heavy Python model files (~4 MB each)
+models/
+*.task
+*.tflite
+
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python source files (not needed — Vercel serves static HTML only)
+*.py
+drowsiness_detector.py
+audio_alert.py
+download_model.py
+test_detector.py
+desktop_app.py
+
+# Audio assets (served statically via index.html, not needed on server)
+assets/
+
+# Windows batch launchers (local only)
+*.bat
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
